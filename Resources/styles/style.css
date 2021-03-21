@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  font-family: "Redressed", serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+div.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  background-color: #212121;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 0.5px black solid;
+}
+
+.container {
+  padding-top: 5rem;
+}
+ul {
+  margin-right: 4rem;
+  list-style: none;
+}
+li.item {
+  font-weight: 900;
+  padding: 0 0rem 0 2rem;
+  font-size: 2rem;
+  color: white;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+li.item a {
+  color: white;
+  text-decoration: none;
+}
+
+li.item a:hover {
+  color: #0088a9;
+}
+.logo {
+  margin-left: 4rem;
+  background-color: #07467f;
+  height: 5rem;
+  width: 10rem;
+  border-radius: 10%;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.menu {
+  width: 20%;
+  position: fixed;
+}
+
+.colors-nav {
+  list-style: none;
+  padding: 2rem;
+}
+.colors-nav li {
+  padding-bottom: 2rem;
+}
+
+.menu ul li.header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.menu ul li.list a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-style: italic;
+  color: grey;
+  cursor: pointer;
+}
+
+#content {
+  border-top: 0.5px black solid;
+  background-color: #212121;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 20%;
+}
+
+#content-Rgb {
+  border-top: 0.5px black solid;
+  background-color: #212121;
+  width: 80%;
+  height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 20%;
+}
+
+.content-element {
+  background-color: white;
+  width: 30%;
+  height: 6rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-element p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.content-element p.value {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: rgb(1, 1, 73);
+}
+
+.white {
+  color: white;
+}
+
+.double {
+  font-size: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*input type range*/
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 1rem 0;
+  width: 80%;
+  cursor: pointer;
+}
+
+input[type="range"]#R {
+  background: linear-gradient(to right, #1b1111 0%, #ff0000 100%);
+}
+
+input[type="range"]#G {
+  background: linear-gradient(to right, #0f1f0f 0%, #00ff00 100%);
+}
+
+input[type="range"]#B {
+  background: linear-gradient(to right, #0d0b22 0%, #0000ff 100%);
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+
+  background: goldenrod;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/*end input type range*/
+#displayRgbaValue {
+  width: 80%;
+  flex-grow: 2;
+
+  background-color: #000;
+}
+
+#displayHslaValue {
+  width: 80%;
+  flex-grow: 2;
+
+  background-color: #000;
+}
+
+#RGBAvalue {
+  font-size: 2rem;
+  color: #319948;
+}
+#HSLAvalue {
+  font-size: 2rem;
+  color: #319948;
+}
+
+.font-styles-wrapper {
+  background-color: #212121;
+  width: 80%;
+  margin-left: 20%;
+}
+#fontStyles {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+#fontStyles h1 {
+  text-align: center;
+  width: 100%;
+  margin: 1rem;
+  color: #a99e00;
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 2rem;
+}
+.fontStyle-element {
+  background-color: white;
+  width: 30%;
+  height: 12rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fontStyle-element p.demonstration {
+  font-size: 1.5rem;
+  color: #0088a9;
+  text-align: center;
+}
+
+.dropdown {
+  font-size: 1rem;
+  margin: 1rem;
+  color: grey;
+
+  width: 30%;
+  text-align: center;
+}
+.dropdown-item {
+  color: grey;
+}
+.header-customize-fonts {
+  color: #a99e00;
+}
+.customize-fonts {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  font-weight: ;
+}
+
+.design {
+  background-color: #212121;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.design h1 {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.design-links {
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+  text-decoration: none;
+  color: #0088a9;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS-Design-System</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Permanent+Marker&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Permanent+Marker&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" href="../Resources/styles/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container1">
+        <img class="logo" src="../Resources/images/css_img.png" alt="" />
+
+        <ul>
+          <li class="item"><a href="colors-name.html">Colors</a></li>
+          <li class="item"><a href="../Pages/font-styles.html">Typography</a></li>
+          <li class="item"><a href="../Pages/design.html">Design</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="menu">
+        <ul class="colors-nav">
+          <li class="header"><h1>Colors<h1></li>
+          <li class="list"><a href = "../Pages/colors-name.html">Colors Name</a></li>
+          <li class="list"><a href = "../Pages/colors-rgb.html">RGB</a></li>
+          <li class="list"><a href = "../Pages/colors-hsl.html">HSL</a></li>
+
+          <li class="header"><h1>Typography<h1></li>
+          <li class="list"><a href="../Pages/font-styles.html">Font-Styles</a></li>
+        </ul>
+      </section>
+       
+    <section class = "font-styles-wrapper">
+        <section id="fontStyles">
+            <h1>Customize Font Families and use it for your website:</h1>
+            
+            
+        </section>
+        <hr>
+        <section class = "customize-fonts">
+            <section class = "dropdown">
+                <h2 class = "header-customize-fonts">font-style<h2>
+                <select id="font-style" class="dropdown" data-settings='{"wrapperClass":"metro"}'>
+                    <option class = "dropdown-item" value="italic" selected>italic</option>
+                    <option class = "dropdown-item" value="normal" >normal</option>
+                    <option class = "dropdown-item" value="oblique">oblique</option>
+                </select> 
+            </section>
+
+            <section class = "dropdown">
+                <h2 class = "header-customize-fonts">font-weight<h2>
+                <select id="font-weight" class="dropdown" data-settings='{"wrapperClass":"metro"}'>
+                    <option class = "dropdown-item" value="100">100</option>
+                    <option class = "dropdown-item" value="200" >200</option>
+                    <option class = "dropdown-item" value="300">300</option>
+                    <option class = "dropdown-item" value="400">400</option>
+                    <option class = "dropdown-item" value="500">500</option>
+                    <option class = "dropdown-item" value="600">600</option>
+                    <option class = "dropdown-item" value="700">700</option>
+                    <option class = "dropdown-item" value="800">800</option>
+                    <option class = "dropdown-item" value="900">900</option>
+                    <option class = "dropdown-item" value="normal"selected>normal</option>
+                    <option class = "dropdown-item" value="bold">bold</option>
+                </select> 
+            </section>
+            <section class="dropdown">
+                <h2 class = "header-customize-fonts">font-size<h2>
+                    <select id="font-size" class="dropdown" data-settings='{"wrapperClass":"metro"}'>
+                        <option class = "dropdown-item" value="10px">10px</option>
+                        <option class = "dropdown-item" value="11px" >11px</option>
+                        <option class = "dropdown-item" value="12px">12px</option>
+                        <option class = "dropdown-item" value="13px">13px</option>
+                        <option class = "dropdown-item" value="14px">14px</option>
+                        <option class = "dropdown-item" value="15px">15px</option>
+                        <option class = "dropdown-item" value="16px">16px</option>
+                        <option class = "dropdown-item" value="17px">17px</option>
+                        <option class = "dropdown-item" value="18px">18px</option>
+                        <option class = "dropdown-item" value="19px">19px</option>
+                        <option class = "dropdown-item" value="20px">20px</option>
+                        <option class = "dropdown-item" value="21px">21px</option>
+                        <option class = "dropdown-item" value="22px">22px</option>
+                        <option class = "dropdown-item" value="23px">23px</option>
+                        <option class = "dropdown-item" value="24px"selected>24px </option>
+            
+                
+                </select> 
+                
+                
+        </section>
+        </section>
+    </section>
+    </div>
+    <script src="../Resources/js/font-styles.js"></script>
+  </body>
+</html>

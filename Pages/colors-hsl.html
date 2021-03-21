@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS-Design-System</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Resources/styles/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container1">
+        <img class="logo" src="../Resources/images/css_img.png" alt="" />
+
+        <ul>
+          <li class="item"><a href="../Pages/colors-name.html">Colors</a></li>
+          <li class="item">
+            <a href="../Pages/font-styles.html">Typography</a>
+          </li>
+          <li class="item"><a href="../Pages/design.html">Design</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="menu">
+        <ul class="colors-nav">
+          <li class="header"><h1>Colors</h1></li>
+          <li class="list">
+            <a href="../Pages/colors-name.html">Colors Name</a>
+          </li>
+          <li class="list"><a href="../Pages/colors-rgb.html">RGB</a></li>
+          <li class="list"><a href="../Pages/colors-hsl.html">HSL</a></li>
+
+          <li class="header"><h1>Typography</h1></li>
+          <li class="list">
+            <a href="../Pages/font-styles.html">Font-Styles</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="content-Rgb">
+        <label for="H" class="red double bold">Hue</label>
+        <input type="range" id="H" name="S" min="0" max="360" value="0" />
+
+        <label for="S" class="green double bold">Saturation</label>
+        <input type="range" id="S" name="S" min="0" max="100" value="0" />
+
+        <label for="L" class="blue double bold">Lightness</label>
+        <input type="range" id="L" name="L" min="0" max="100" value="0" />
+
+        <label for="O" class="white double bold">Opacity</label>
+        <input
+          type="range"
+          id="O"
+          name="O"
+          min="0"
+          max="1"
+          step="0.1"
+          value="1"
+        />
+
+        <h1 id="HSLAvalue">hsla(0,0%,0%,1);</h1>
+        <section id="displayHslaValue"></section>
+      </section>
+    </div>
+    <script src="../Resources/js/rgb.js"></script>
+  </body>
+</html>
